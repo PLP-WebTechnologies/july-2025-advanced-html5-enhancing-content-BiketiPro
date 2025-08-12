@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form with HTML5 Features</title>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced Form with HTML5 Features</h1>
+  </header>
+
+  <main>
+    <!-- Section for Lists -->
+    <section>
+      <h2>Benefits of HTML5</h2>
+      <ul>
+        <li>Improved semantics and accessibility</li>
+        <li>Native support for multimedia (audio, video, etc.)</li>
+        <li>Enhanced form validation without JavaScript</li>
+        <li>Better support for mobile devices</li>
+      </ul>
+
+      <h3>Advantages of using HTML5 for Forms</h3>
+      <ol>
+        <li>Built-in form validation</li>
+        <li>Variety of input types (email, date, number, etc.)</li>
+        <li>Better user experience with modern browsers</li>
+      </ol>
+    </section>
+
+    <!-- Section for Table -->
+    <section>
+      <h2>HTML5 Input Types</h2>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Input Type</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>Validates that the input is a valid email address</td>
+            <td><input type="email" placeholder="example@example.com" required></td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>Only allows numeric input</td>
+            <td><input type="number" placeholder="Enter a number" required></td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td>Allows the user to select a date</td>
+            <td><input type="date" required></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section for Media -->
+    <section>
+      <h2>Sample Audio & Video</h2>
+      <p>Here is an example of embedded audio and video:</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="600">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required pattern="\(\d{3}\) \d{3}-\d{4}">
+
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+
+        </fieldset>
+
+        <fieldset>
+          <label for="subscribe">Subscribe to newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        </fieldset>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
